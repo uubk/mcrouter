@@ -1,0 +1,8 @@
+mcrouter (0.57) unstable; urgency=medium
+
+  * Initial Release, corresponding to upstrem commit
+    4878354cf80ed5ec809043f00145b413968f2e06. At the moment there seems to be
+    no version that actually compiles against any of it's dependencies, so git
+    HEAD it is...
+
+ -- Maximilian Falkenstein <mfalkenstein@sos.ethz.ch>  Sat, 30 Jun 2018 18:07:56 +0200

@@ -1,0 +1,17 @@
+Source: mcrouter
+Section: utils
+Priority: optional
+Maintainer: Maximilian Falkenstein <falkensm@sos.ethz.ch>
+Build-Depends: debhelper (>=9), ragel, libboost-filesystem-dev (>=1.51), libboost-system-dev (>=1.51), libboost-regex-dev (>=1.51), libboost-context-dev (>=1.51), folly-dev (=0.57), wangle-dev (=0.57), liblz4-dev, libsnappy-dev, liblzma-dev, libiberty-dev
+Standards-Version: 3.9.88
+Homepage: https://github.com/facebook/mcrouter
+Vcs-Git: https://github.com/uubk/mcrouter.git
+Vcs-Browser: https://github.com/uubk/mcrouter
+
+Package: mcrouter
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A memcached protocol router
+  Mcrouter is a memcached protocol router for scaling memcached deployments.
+  It's a core component of cache infrastructure at Facebook and Instagram where
+  mcrouter handles almost 5 billion requests per second at peak.

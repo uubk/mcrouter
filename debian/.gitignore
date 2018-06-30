@@ -1,0 +1,8 @@
+autoreconf.after
+autoreconf.before
+*.log
+*.substvars
+tmp
+.debhelper
+debhelper-build-stamp
+mcrouter/
