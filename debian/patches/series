@@ -1,1 +1,2 @@
 support-openssl-1.1.patch
+fix-folly-linking.patch

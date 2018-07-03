@@ -1,0 +1,12 @@
+Manually add libunwind to the linker arguments
+--- a/mcrouter/configure.ac
++++ b/mcrouter/configure.ac
+@@ -158,7 +158,7 @@
+ 
+ LIBS="$LIBS $BOOST_LDFLAGS $BOOST_CONTEXT_LIB $BOOST_FILESYSTEM_LIB \
+       $BOOST_PROGRAM_OPTIONS_LIB $BOOST_SYSTEM_LIB $BOOST_REGEX_LIB \
+-      $BOOST_THREAD_LIB -lpthread -pthread"
++      $BOOST_THREAD_LIB -lpthread -pthread -lunwind"
+ 
+ AM_PATH_PYTHON([2.6],, [:])
+ AM_CONDITIONAL([HAVE_PYTHON], [test "$PYTHON" != :])
